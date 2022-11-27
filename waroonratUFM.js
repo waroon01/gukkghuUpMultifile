@@ -41,14 +41,14 @@ $('input[type="file"]').on('change',function(e){
   //  })
   //  })  
 
-document.addEventListener('DOMContentLoaded', (ev) =>{
+// document.addEventListener('DOMContentLoaded', (ev) =>{
 
-showFileIcon('myFile1','img1')
-showFileIcon('myFile2','img2')
-showFileIcon('myFile3','img3')
-showFileIcon('myFile4','img4')
+// showFileIcon('myFile1','img1')
+// showFileIcon('myFile2','img2')
+// showFileIcon('myFile3','img3')
+// showFileIcon('myFile4','img4')
 
-});
+// });
 
 function showFileIcon(fileID, imgID){
 let input = document.getElementById(fileID);
