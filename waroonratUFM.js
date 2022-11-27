@@ -50,17 +50,17 @@ $('input[type="file"]').on('change',function(e){
 
 // });
 
-function showFileIcon(fileID, imgID){
-let input = document.getElementById(fileID);
-input.addEventListener('change', (ev) =>{
-  console.dir( input.files[0] );
-  let img = document.getElementById(imgID);
-  img.style.display = "block";
-  img.src = input.files[0].type.indexOf("image/") > -1? window.URL.createObjectURL(input.files[0]):
-            input.files[0].type.indexOf("/pdf") > -1? "http://uapminovasi.com/wp-content/uploads/2018/09/pdf-logo-15.jpg":
-            input.files[0].type.indexOf(".sheet") > -1? "https://gadoin.com/wp-content/uploads/2021/05/excel-logo-0.jpg":
-            input.files[0].type.indexOf(".document") > -1?
-            "https://logos-world.net/wp-content/uploads/2020/03/Microsoft-Word-Logo-2013-2019.png":
-            "https://iconape.com/wp-content/png_logo_vector/document.png";
-})
-};
+// function showFileIcon(fileID, imgID){
+// let input = document.getElementById(fileID);
+// input.addEventListener('change', (ev) =>{
+//   console.dir( input.files[0] );
+//   let img = document.getElementById(imgID);
+//   img.style.display = "block";
+//   img.src = input.files[0].type.indexOf("image/") > -1? window.URL.createObjectURL(input.files[0]):
+//             input.files[0].type.indexOf("/pdf") > -1? "http://uapminovasi.com/wp-content/uploads/2018/09/pdf-logo-15.jpg":
+//             input.files[0].type.indexOf(".sheet") > -1? "https://gadoin.com/wp-content/uploads/2021/05/excel-logo-0.jpg":
+//             input.files[0].type.indexOf(".document") > -1?
+//             "https://logos-world.net/wp-content/uploads/2020/03/Microsoft-Word-Logo-2013-2019.png":
+//             "https://iconape.com/wp-content/png_logo_vector/document.png";
+// })
+// };
